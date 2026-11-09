@@ -329,7 +329,10 @@ def circuit_hashes(tier: str, cycles: int):
     builders = BUILDERS[tier]
     h = {}
     for name, builder in builders.items():
-        qc = builder(cycles)
+        if name in ("cal_1", "cal_0"):
+            qc = builder()
+        else:
+            qc = builder(cycles)
         blob = qasm3.dumps(qc).encode()
         h[name] = hashlib.sha256(blob).hexdigest()
     return h

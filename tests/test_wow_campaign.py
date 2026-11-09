@@ -112,7 +112,7 @@ def test_b3_circuits_build():
 
 
 def test_circuit_hashes():
-    from scripts.wow_campaign import circuit_hashes
+    from scripts.wow_campaign import circuit_hashes, TIERS
 
     for tier in ["B0", "B1", "B2", "B3"]:
         hashes = circuit_hashes(tier, TIERS[tier]["cycles"])
@@ -135,7 +135,7 @@ def test_wilson_ci():
     assert high > 0.0
 
     low, high = wilson_ci(100, 100)
-    assert high == 1.0
+    assert abs(high - 1.0) < 1e-10  # floating point precision
     assert low < 1.0
 
     # Test zero shots
