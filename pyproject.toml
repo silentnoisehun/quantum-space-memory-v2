@@ -9,7 +9,7 @@ description = "4-Tier WOW QPU Campaign for Quantum Space Memory on IBM Heron r2"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Máté Róbert", email = "silentnoisehun@gmail.com", orcid = "0009-0003-3986-6039"}
+    {name = "Máté Róbert", email = "silentnoisehun@gmail.com"}
 ]
 keywords = [
     "quantum computing",

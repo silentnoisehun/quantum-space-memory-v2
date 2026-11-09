@@ -1,0 +1,287 @@
+{
+  "search_space": {
+    "F_freq": 16,
+    "Q_qubit": 20,
+    "T_delay": 6,
+    "tiers": 4,
+    "cells_per_tier": 1920,
+    "cells_total": 7680
+  },
+  "alpha_familywise": 0.01,
+  "z_threshold_per_cell": 4.408,
+  "hard_decoding": [
+    {
+      "bits": 9,
+      "false_alarm_per_cell": 0.001953125,
+      "expected_false_alarms_over_space": 3.75,
+      "verdict_hard": "HAMIS TALÁLAT GYAKORLATILAG BIZTOS"
+    },
+    {
+      "bits": 16,
+      "false_alarm_per_cell": 1.52587890625e-05,
+      "expected_false_alarms_over_space": 0.029296875,
+      "verdict_hard": "gyenge"
+    },
+    {
+      "bits": 24,
+      "false_alarm_per_cell": 5.960464477539063e-08,
+      "expected_false_alarms_over_space": 0.00011444091796875,
+      "verdict_hard": "ELVETHETŐ"
+    },
+    {
+      "bits": 32,
+      "false_alarm_per_cell": 2.3283064365386963e-10,
+      "expected_false_alarms_over_space": 4.470348358154297e-07,
+      "verdict_hard": "ELVETHETŐ"
+    },
+    {
+      "bits": 48,
+      "false_alarm_per_cell": 3.552713678800501e-15,
+      "expected_false_alarms_over_space": 6.821210263296962e-12,
+      "verdict_hard": "ELVETHETŐ"
+    },
+    {
+      "bits": 64,
+      "false_alarm_per_cell": 5.421010862427522e-20,
+      "expected_false_alarms_over_space": 1.0408340855860843e-16,
+      "verdict_hard": "ELVETHETŐ"
+    },
+    {
+      "bits": 96,
+      "false_alarm_per_cell": 1.262177448353619e-29,
+      "expected_false_alarms_over_space": 2.4233807008389483e-26,
+      "verdict_hard": "ELVETHETŐ"
+    },
+    {
+      "bits": 128,
+      "false_alarm_per_cell": 2.938735877055719e-39,
+      "expected_false_alarms_over_space": 5.64237288394698e-36,
+      "verdict_hard": "ELVETHETŐ"
+    }
+  ],
+  "soft_decoding_sensitivity": [
+    {
+      "per_bit_fidelity": 0.8,
+      "cells": [
+        {
+          "bits": 16,
+          "z_true": 2.4,
+          "detectable": false
+        },
+        {
+          "bits": 24,
+          "z_true": 2.94,
+          "detectable": false
+        },
+        {
+          "bits": 32,
+          "z_true": 3.39,
+          "detectable": false
+        },
+        {
+          "bits": 48,
+          "z_true": 4.16,
+          "detectable": false
+        },
+        {
+          "bits": 64,
+          "z_true": 4.8,
+          "detectable": true
+        },
+        {
+          "bits": 96,
+          "z_true": 5.88,
+          "detectable": true
+        }
+      ]
+    },
+    {
+      "per_bit_fidelity": 0.85,
+      "cells": [
+        {
+          "bits": 16,
+          "z_true": 2.8,
+          "detectable": false
+        },
+        {
+          "bits": 24,
+          "z_true": 3.43,
+          "detectable": false
+        },
+        {
+          "bits": 32,
+          "z_true": 3.96,
+          "detectable": false
+        },
+        {
+          "bits": 48,
+          "z_true": 4.85,
+          "detectable": true
+        },
+        {
+          "bits": 64,
+          "z_true": 5.6,
+          "detectable": true
+        },
+        {
+          "bits": 96,
+          "z_true": 6.86,
+          "detectable": true
+        }
+      ]
+    },
+    {
+      "per_bit_fidelity": 0.9,
+      "cells": [
+        {
+          "bits": 16,
+          "z_true": 3.2,
+          "detectable": false
+        },
+        {
+          "bits": 24,
+          "z_true": 3.92,
+          "detectable": false
+        },
+        {
+          "bits": 32,
+          "z_true": 4.53,
+          "detectable": true
+        },
+        {
+          "bits": 48,
+          "z_true": 5.54,
+          "detectable": true
+        },
+        {
+          "bits": 64,
+          "z_true": 6.4,
+          "detectable": true
+        },
+        {
+          "bits": 96,
+          "z_true": 7.84,
+          "detectable": true
+        }
+      ]
+    },
+    {
+      "per_bit_fidelity": 0.93,
+      "cells": [
+        {
+          "bits": 16,
+          "z_true": 3.44,
+          "detectable": false
+        },
+        {
+          "bits": 24,
+          "z_true": 4.21,
+          "detectable": false
+        },
+        {
+          "bits": 32,
+          "z_true": 4.86,
+          "detectable": true
+        },
+        {
+          "bits": 48,
+          "z_true": 5.96,
+          "detectable": true
+        },
+        {
+          "bits": 64,
+          "z_true": 6.88,
+          "detectable": true
+        },
+        {
+          "bits": 96,
+          "z_true": 8.43,
+          "detectable": true
+        }
+      ]
+    },
+    {
+      "per_bit_fidelity": 0.95,
+      "cells": [
+        {
+          "bits": 16,
+          "z_true": 3.6,
+          "detectable": false
+        },
+        {
+          "bits": 24,
+          "z_true": 4.41,
+          "detectable": true
+        },
+        {
+          "bits": 32,
+          "z_true": 5.09,
+          "detectable": true
+        },
+        {
+          "bits": 48,
+          "z_true": 6.24,
+          "detectable": true
+        },
+        {
+          "bits": 64,
+          "z_true": 7.2,
+          "detectable": true
+        },
+        {
+          "bits": 96,
+          "z_true": 8.82,
+          "detectable": true
+        }
+      ]
+    },
+    {
+      "per_bit_fidelity": 0.99,
+      "cells": [
+        {
+          "bits": 16,
+          "z_true": 3.92,
+          "detectable": false
+        },
+        {
+          "bits": 24,
+          "z_true": 4.8,
+          "detectable": true
+        },
+        {
+          "bits": 32,
+          "z_true": 5.54,
+          "detectable": true
+        },
+        {
+          "bits": 48,
+          "z_true": 6.79,
+          "detectable": true
+        },
+        {
+          "bits": 64,
+          "z_true": 7.84,
+          "detectable": true
+        },
+        {
+          "bits": 96,
+          "z_true": 9.6,
+          "detectable": true
+        }
+      ]
+    }
+  ],
+  "min_bits_needed_for_detection": {
+    "0.8": 54,
+    "0.85": 40,
+    "0.9": 31,
+    "0.93": 27,
+    "0.95": 24,
+    "0.99": 21
+  },
+  "recommendation": {
+    "message_bits": 64,
+    "why": "64 bit: hard false-alarm 5.4e-20 cellánként (gyakorlatilag nulla), és szoft dekódolással még 0.80-as bit-hűség mellett is 6.4 sigma, a 4.44-es küszöb felett. 9 jellel (a WOW morze) a várt hamis találat 3.75 LENNE a négy fokozaton -> nem bizonyíték.",
+    "wow_kept_as": "élmény / bemutató motif, NEM a szigorú mérés fő mérőszáma"
+  }
+}

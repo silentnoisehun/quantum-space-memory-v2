@@ -113,6 +113,23 @@ python scripts/extract_wow.py --job <JOB_ID>
 
 ---
 
+## Cross-Chip Blind Carrier & Power Analysis (Marrakesh -> Kingston)
+
+In addition to the discrete Zeno tiers B0–B3, the repository incorporates the active modulation space memory protocol detailed in `docs/PREREGISTRATION-cross_chip_blind_carrier_wow.md`:
+* **Statistical Power Analysis (`scripts/power_analysis.py`):** Demonstrates that a 9-symbol motif over 7,680 cells yields $3.75$ expected false alarms under random noise. The experiment strictly mandates **64 bits** (hard false alarm $5.4 \times 10^{-20}$ per cell; $1.0 \times 10^{-16}$ family-wise).
+* **Exact Spectral Blind Detector (`scripts/blind_decoder.py`):** Uses normalized periodogram ordinates which strictly follow an $\text{Exp}(1)$ distribution under Gaussian white noise, providing an exact closed-form family-wise $p$-value ($p_\text{family} = 1 - (1 - e^{-P_\text{max}})^M$).
+
+```bash
+# Run power analysis and generate data/power_analysis.json
+python scripts/power_analysis.py
+
+# Run blind decoder selftest and null test (150 trials)
+python scripts/blind_decoder.py --selftest
+python scripts/blind_decoder.py --null --trials 150
+```
+
+---
+
 ## License
 
 MIT license. The citation metadata is in `CITATION.cff`.
