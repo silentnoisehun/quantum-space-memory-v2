@@ -339,20 +339,24 @@ def circuit_hashes(tier: str, cycles: int):
 
 
 def get_service():
-    """Get QiskitRuntimeService with API key from env."""
+    """Get QiskitRuntimeService with API key from env or Downloads."""
     from qiskit_ibm_runtime import QiskitRuntimeService
-
     api_key = os.environ.get("QISKIT_IBM_RUNTIME_API_KEY") or os.environ.get("IBM_API_KEY")
-    instance = os.environ.get("IBM_QUANTUM_INSTANCE", "auto")
+    if not api_key:
+        downloads = Path(os.environ["USERPROFILE"]) / "Downloads"
+        for fname in ["apikey (2) (2).json", "apikey (2) (1).json", "apikey.json"]:
+            kp = downloads / fname
+            if kp.exists():
+                try:
+                    data = json.loads(kp.read_text(encoding="utf-8"))
+                    api_key = data.get("apikey") or data.get("token")
+                    if api_key:
+                        break
+                except Exception:
+                    pass
     if api_key:
-        return QiskitRuntimeService(
-            channel="ibm_quantum_platform",
-            token=api_key,
-            instance=instance
-        )
-
-    # Fallback to saved credentials
-    return QiskitRuntimeService(channel="ibm_quantum_platform", instance=instance)
+        return QiskitRuntimeService(channel="ibm_quantum_platform", token=api_key)
+    return QiskitRuntimeService(channel="ibm_quantum_platform", instance="auto")
 
 
 def main():
