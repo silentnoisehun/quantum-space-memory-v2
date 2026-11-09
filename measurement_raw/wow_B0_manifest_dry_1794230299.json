@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-09T13:18:19Z",
+  "tier": "B0",
+  "tier_name": "Single-Qubit Zeno",
+  "backend": "ibm_marrakesh",
+  "qubits": 1,
+  "cycles": 20,
+  "shots": 2000,
+  "theta": 0.47123889803846897,
+  "circuit_sha256": {
+    "active": "31f599b187293db3718df2a3e99cf7b9c1215bebd5dff4efe9b0fe5772609d06",
+    "passive": "91142e964af1433355fb0e2e3a041f28538216a983012cb8c9126aa8833cf3c7",
+    "cal_1": "0d3b9f4463d4f8644f7257209524a423a495d4bcfc2f73b95173306cb71697d6",
+    "cal_0": "4b4b3e4ae11483c150f8626ff8c090c8b11c823e3b1961bb9f20ac63b34807db"
+  },
+  "preregistered": true,
+  "pubs": {
+    "0": "active",
+    "1": "passive",
+    "2": "cal_1",
+    "3": "cal_0"
+  },
+  "note": "All 4 circuits in one job; cal_1/cal_0 provide in-job readout calibration"
+}

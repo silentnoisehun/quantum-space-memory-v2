@@ -1,0 +1,78 @@
+{
+  "timestamp_utc": "2026-11-09T15:11:40Z",
+  "marrakesh_job": "dbosur8ou4as73csl6bg",
+  "kingston_job": "dbosurtt7fqc7388da9g",
+  "total_cells_tested": 384,
+  "P_max": 4.978459628058864,
+  "best_cell": "kingston_q2_d100us",
+  "detected_freq_index": 3,
+  "detected_period": 7,
+  "secret_freq_index": 7,
+  "secret_period": 11,
+  "p_family": 0.9295499751170923,
+  "detected": false,
+  "matches_secret": false,
+  "verdict": "CONFIRMED NULL \u2014 Tiszta zajpadl\u00f3 a Kingstonon (nincs kimutathat\u00f3 cross-chip t\u00e9r-mem\u00f3ria).",
+  "top_10_peaks": [
+    {
+      "P": 4.978459628058864,
+      "cell": "kingston_q2_d100us",
+      "freq_idx": 3,
+      "period": 7
+    },
+    {
+      "P": 3.8759910601079732,
+      "cell": "kingston_q0_d10us",
+      "freq_idx": 15,
+      "period": 19
+    },
+    {
+      "P": 3.780028374674129,
+      "cell": "kingston_q1_d10us",
+      "freq_idx": 13,
+      "period": 17
+    },
+    {
+      "P": 3.735453454716494,
+      "cell": "kingston_q3_d100us",
+      "freq_idx": 2,
+      "period": 6
+    },
+    {
+      "P": 3.7275975710926774,
+      "cell": "kingston_q3_d10000us",
+      "freq_idx": 14,
+      "period": 18
+    },
+    {
+      "P": 3.664817692799608,
+      "cell": "kingston_q3_d1000us",
+      "freq_idx": 2,
+      "period": 6
+    },
+    {
+      "P": 3.5521298971452024,
+      "cell": "kingston_q2_d1us",
+      "freq_idx": 7,
+      "period": 11
+    },
+    {
+      "P": 3.481876511815971,
+      "cell": "kingston_q3_d10us",
+      "freq_idx": 3,
+      "period": 7
+    },
+    {
+      "P": 3.264008774164947,
+      "cell": "kingston_q3_d100us",
+      "freq_idx": 12,
+      "period": 16
+    },
+    {
+      "P": 3.1007041937103543,
+      "cell": "kingston_q0_d1000us",
+      "freq_idx": 10,
+      "period": 14
+    }
+  ]
+}

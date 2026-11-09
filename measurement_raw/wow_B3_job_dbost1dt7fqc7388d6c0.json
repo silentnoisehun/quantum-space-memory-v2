@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-11-09T13:45:12Z",
+  "tier": "B3",
+  "tier_name": "5-Qubit Space Memory",
+  "backend": "ibm_marrakesh",
+  "qubits": 5,
+  "cycles": 10,
+  "shots": 2000,
+  "theta": 0.47123889803846897,
+  "circuit_sha256": {
+    "active": "e694f1d2a942fe12a2406408947b44c8104e0f6531235883d63627ffb22f34b9",
+    "passive": "4163a40b15dd7cc971f4ad344d7461959b8679e09959be56bcbe36440c095751",
+    "cal_1": "dc52746025df20f2a5b51c3ffe629b9e60378d87f474cec881ff7711775849c7",
+    "cal_0": "b033a416a0b6f8b907c3d207beff0a76ce30f08f3a3964d79ca63141045a5607"
+  },
+  "preregistered": false,
+  "pubs": {
+    "0": "active",
+    "1": "passive",
+    "2": "cal_1",
+    "3": "cal_0"
+  },
+  "note": "All 4 circuits in one job; cal_1/cal_0 provide in-job readout calibration",
+  "job_id": "dbost1dt7fqc7388d6c0",
+  "status": "QUEUED"
+}

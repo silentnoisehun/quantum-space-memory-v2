@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-09T13:23:05Z",
+  "tier": "B1",
+  "tier_name": "Bell Parity Zeno",
+  "backend": "ibm_marrakesh",
+  "qubits": 2,
+  "cycles": 20,
+  "shots": 2000,
+  "theta": 0.47123889803846897,
+  "circuit_sha256": {
+    "active": "d057798911a4532841bb41cbb8cdec60b354c4439165371a1b9385ffd5570051",
+    "passive": "43d4218bbdb96edca6c0f35b955aac8cd59d75dc51953138e351c7a1f04c11ae",
+    "cal_1": "20f887ed2e675cea6d201defd6832a081b9257753ef2c1d9572f3d4b93aa8022",
+    "cal_0": "9bb22cb4e9dfee89afa77e87040341a539ffe9935cb5945e1882ccfa56af22af"
+  },
+  "preregistered": true,
+  "pubs": {
+    "0": "active",
+    "1": "passive",
+    "2": "cal_1",
+    "3": "cal_0"
+  },
+  "note": "All 4 circuits in one job; cal_1/cal_0 provide in-job readout calibration"
+}

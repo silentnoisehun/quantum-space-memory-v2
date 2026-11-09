@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-09T13:23:06Z",
+  "tier": "B2",
+  "tier_name": "GHZ-3 Population",
+  "backend": "ibm_marrakesh",
+  "qubits": 3,
+  "cycles": 15,
+  "shots": 2000,
+  "theta": 0.47123889803846897,
+  "circuit_sha256": {
+    "active": "6662520043d7821af708f578960ff7073e7d71b9d18dba8101f61da05a8bbd59",
+    "passive": "7b93623fc03fcbe948cef3039be67ceb4221ab8e0f9a6511de48dfa9cec92018",
+    "cal_1": "d68a7445fc3ffa5d9b2cd5822bf35ef3b29d99b17a78b41c9891d566433e555b",
+    "cal_0": "5ea37c5e5f1ea1645f701166b8e84b1f88ed7251f185a9e5742e889b9867f1ee"
+  },
+  "preregistered": true,
+  "pubs": {
+    "0": "active",
+    "1": "passive",
+    "2": "cal_1",
+    "3": "cal_0"
+  },
+  "note": "All 4 circuits in one job; cal_1/cal_0 provide in-job readout calibration"
+}

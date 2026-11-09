@@ -1,0 +1,74 @@
+{
+  "job_id": "dborkss4148s739tgag0",
+  "status": "DONE",
+  "backend": "ibm_kingston",
+  "metrics": {
+    "caller": "qiskit_ibm_runtime~sampler.py",
+    "qiskit_version": "qiskit_ibm_runtime-0.51.0,qiskit-2.6.2*",
+    "timestamps": {
+      "created": "2026-11-09T12:20:03.820637Z",
+      "finished": "2026-11-09T13:14:32.957855Z",
+      "running": "2026-11-09T12:47:36.199066Z"
+    },
+    "usage": {
+      "qpu_charge_time_seconds": 2,
+      "value": 0.032821,
+      "unit": "resource_units",
+      "status": "pending",
+      "details": [
+        {
+          "value": 0.032821,
+          "unit": "resource_units",
+          "metric": {
+            "id": "caffe3ca-729c-5750-8777-df63bbf8bfd9",
+            "value": 2
+          }
+        }
+      ]
+    },
+    "circuits_execution_time_ns": 267166720
+  },
+  "pubs_count": 1,
+  "data_summary": [
+    {
+      "pub_index": 0,
+      "keys": [
+        "c",
+        "items",
+        "keys",
+        "ndim",
+        "shape",
+        "size",
+        "values"
+      ],
+      "details": {
+        "c": {
+          "type": "array",
+          "shape": [
+            1024,
+            1
+          ],
+          "dtype": "complex128"
+        },
+        "items": {
+          "type": "<class 'method'>"
+        },
+        "keys": {
+          "type": "<class 'method'>"
+        },
+        "ndim": {
+          "type": "<class 'int'>"
+        },
+        "shape": {
+          "type": "<class 'tuple'>"
+        },
+        "size": {
+          "type": "<class 'int'>"
+        },
+        "values": {
+          "type": "<class 'method'>"
+        }
+      }
+    }
+  ]
+}

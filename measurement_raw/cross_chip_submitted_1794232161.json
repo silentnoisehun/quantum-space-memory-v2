@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-11-09T13:49:05Z",
+  "secret_salt": "AURORA_WOW_SPACE_MEMORY_20261109",
+  "committed_carrier_hash": "7f0b6ac1315875de78e7571079fae0d230abacc737f9ac3378f7f51a4511b917",
+  "delays_us": [
+    0.0,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "shots": 1024,
+  "options": {
+    "execution": {
+      "meas_type": "kerneled"
+    }
+  },
+  "tier_a_b_backend": "ibm_marrakesh",
+  "tier_d_backend": "ibm_kingston",
+  "marrakesh_job_id": "dbosur8ou4as73csl6bg",
+  "kingston_job_id": "dbosurtt7fqc7388da9g"
+}
