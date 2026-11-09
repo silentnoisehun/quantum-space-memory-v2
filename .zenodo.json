@@ -1,0 +1,26 @@
+{
+  "title": "Quantum Space Memory v2: 4-Tier WOW QPU Campaign on IBM Heron r2",
+  "description": "4-tier experimental campaign testing Active Quantum Zeno dynamics across increasing qubit counts (1, 2, 3, 5 qubits) on 156-qubit IBM Heron r2 (ibm_marrakesh). Tiers B0-B2 are preregistered with explicit pass/fail gates; B3 is exploratory. Builds on quantum-active-space-memory v1.3.3 (N=20, ΔF=+97.35pp, PREREG PASSED). All tiers include in-job readout calibration. Key expected results: B0 ΔF≈97pp, B1 ΔF_parity≈23pp, B2 ΔF_GHZ≈24pp, B3 exploratory 5-qubit scaling.",
+  "creators": [
+    {
+      "name": "Máté, Róbert",
+      "affiliation": "Independent researcher",
+      "orcid": "0009-0003-3986-6039"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "version": "2.0.0",
+  "publication_date": "2026-11-09",
+  "keywords": [
+    "quantum computing",
+    "quantum zeno dynamics",
+    "quantum memory",
+    "dynamic circuits",
+    "superconducting transmon",
+    "ibm quantum",
+    "preregistration",
+    "mid-circuit measurement"
+  ],
+  "upload_type": "software"
+}

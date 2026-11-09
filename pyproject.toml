@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-space-memory-v2"
+version = "2.0.0"
+description = "4-Tier WOW QPU Campaign for Quantum Space Memory on IBM Heron r2"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Máté Róbert", email = "silentnoisehun@gmail.com", orcid = "0009-0003-3986-6039"}
+]
+keywords = [
+    "quantum computing",
+    "quantum zeno effect",
+    "quantum memory",
+    "dynamic circuits",
+    "superconducting qubits",
+    "ibm quantum",
+    "preregistration",
+    "mid-circuit measurement"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "qiskit>=1.3",
+    "qiskit-ibm-runtime>=0.51",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "black>=23.0",
+    "ruff>=0.1.0",
+]
+hardware = [
+    "qiskit-ibm-runtime>=0.51",
+]
+
+[project.urls]
+Homepage = "https://github.com/silentnoisehun/quantum-space-memory-v2"
+Repository = "https://github.com/silentnoisehun/quantum-space-memory-v2"
+Issues = "https://github.com/silentnoisehun/quantum-space-memory-v2/issues"
+Documentation = "https://github.com/silentnoisehun/quantum-space-memory-v2/docs"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["quantum_space_memory_v2*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "W", "UP", "B", "C4", "SIM", "T20"]
+ignore = ["S101", "S311", "B018"]
