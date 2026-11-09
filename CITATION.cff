@@ -1,21 +1,25 @@
 cff-version: 1.2.0
-message: "If you use this dataset or software, please cite it as below."
+message: "If you use this experimental data or code, please cite it as below."
+title: "Quantum Space Memory v2: 2-Stage IBM Heron Zeno Validation and Cross-Chip Blind Demodulator Audit"
 authors:
   - family-names: "Máté"
     given-names: "Róbert"
     orcid: "https://orcid.org/0009-0003-3986-6039"
-    affiliation: "Independent researcher"
-title: "Quantum Space Memory v2: 4-Tier WOW QPU Campaign on IBM Heron r2"
-version: 2.0.0
 date-released: 2026-11-09
-url: "https://github.com/silentnoisehun/quantum-space-memory-v2"
+version: 2.0.0
+repository-code: "https://github.com/silentnoisehun/quantum-space-memory-v2"
+license: "MIT"
 keywords:
-  - "quantum computing"
-  - "quantum zeno effect"
-  - "quantum memory"
-  - "dynamic circuits"
-  - "superconducting qubits"
-  - "ibm quantum"
-  - "preregistration"
-  - "mid-circuit measurement"
-license: MIT
+  - "quantum-computing"
+  - "quantum-zeno-effect"
+  - "ibm-heron"
+  - "qiskit"
+  - "blind-decoder"
+  - "null-hypothesis"
+abstract: >-
+  Pre-registered, two-stage physical quantum memory evaluation on 156-qubit IBM Heron
+  superconducting processors (ibm_marrakesh and ibm_kingston). Stage 1 independently
+  verified quantum Zeno population pinning (+98.44 pp in B0, +82.95 pp in B3) and Bell
+  parity mixing (+45.95 pp). Stage 2 executed a pre-registered 16-frequency blind spectral
+  periodogram detector on raw complex128 kerneled IQ heterodyne demodulation data, confirming
+  the exact null result (P_max = 4.98 < E[noise] = 6.53, p_family = 0.93, coupling < 14.36%).
